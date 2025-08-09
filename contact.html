@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - 百花传媒 Baihua Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="typewriter-header">
+                <img src="logo/icon/Icon-color.png" alt="百花传媒 Baihua Media" class="logo">
+                <p class="subtitle">海外中文播客工作室 • Chinese Podcast Incubator</p>
+            </div>
+            <nav>
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="index.html#mission" class="nav-link">MISSION</a>
+                <a href="index.html#podcasts" class="nav-link">PODCASTS</a>
+                <a href="contact.html" class="nav-link active">CONTACT</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section">
+                <h2 class="section-title">CONTACT US</h2>
+                
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="terminal-title">contact_info.txt</span>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="contact-info">
+                            <p class="contact-line">
+                                <span class="prompt">$</span> 
+                                <span class="command">echo "Get in touch with Baihua Media"</span>
+                            </p>
+                            <p class="output">Get in touch with Baihua Media</p>
+                            
+                            <p class="contact-line">
+                                <span class="prompt">$</span> 
+                                <span class="command">cat email.txt</span>
+                            </p>
+                            <p class="output email-highlight">
+                                <a href="mailto:baihua.pod@gmail.com" class="email-link">baihua.pod@gmail.com</a>
+                            </p>
+                            
+                            <p class="contact-line">
+                                <span class="prompt">$</span> 
+                                <span class="command">ls -la services/</span>
+                            </p>
+                            <div class="output services-list">
+                                <p>total 6</p>
+                                <p>drwxr-xr-x  podcast_incubation/</p>
+                                <p>drwxr-xr-x  content_strategy/</p>
+                                <p>drwxr-xr-x  production_consulting/</p>
+                                <p>drwxr-xr-x  community_engagement/</p>
+                                <p>drwxr-xr-x  branding_design/</p>
+                                <p>drwxr-xr-x  distribution_support/</p>
+                            </div>
+                            
+                            <p class="contact-line">
+                                <span class="prompt">$</span> 
+                                <span class="command">whoami</span>
+                            </p>
+                            <p class="output">Chinese diaspora podcast incubator</p>
+                            
+                            <p class="contact-line">
+                                <span class="prompt">$</span> 
+                                <span class="command typing-command">_</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h3 class="subsection-title">联系我们 // GET IN TOUCH</h3>
+                    <p>Whether you're an aspiring podcaster with a brilliant idea, an existing creator looking to enhance your content strategy, or simply someone passionate about Chinese-language media, we'd love to hear from you.</p>
+                    
+                    <p class="chinese-text">无论您是有着绝妙创意的播客新手，希望提升内容策略的现有创作者，还是对中文媒体充满热情的朋友，我们都很乐意与您交流。</p>
+                    
+                    <div class="contact-methods">
+                        <div class="method-card">
+                            <h4>📧 EMAIL</h4>
+                            <p>For general inquiries, collaboration proposals, and creative partnerships:</p>
+                            <p class="contact-detail">
+                                <a href="mailto:baihua.pod@gmail.com" class="email-link">baihua.pod@gmail.com</a>
+                            </p>
+                        </div>
+                        
+                        <div class="method-card">
+                            <h4>🎙️ PODCAST INCUBATION</h4>
+                            <p>Ready to launch your Chinese-language podcast? Let's discuss your vision and how we can help bring it to life.</p>
+                        </div>
+                        
+                        <div class="method-card">
+                            <h4>🤝 CONSULTING SERVICES</h4>
+                            <p>Already podcasting? We offer strategic consulting for content development, audience growth, and community building.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ascii-art">
+                    <pre>
+    ╔══════════════════════════════════════╗
+    ║                                      ║
+    ║     Thank you for your interest      ║
+    ║         in Baihua Media!             ║
+    ║                                      ║
+    ║    We look forward to hearing        ║
+    ║         from you soon.               ║
+    ║                                      ║
+    ╚══════════════════════════════════════╝
+                    </pre>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>© 2024 百花传媒 Baihua Media</p>
+                <p><a href="index.html" class="footer-link">Back to Home</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Typing animation for the command prompt
+        document.addEventListener('DOMContentLoaded', function() {
+            const typingCommand = document.querySelector('.typing-command');
+            
+            if (typingCommand) {
+                const commands = [
+                    'help',
+                    'ls podcasts/',
+                    'cat mission.txt',
+                    'ping creativity',
+                    'sudo make-podcast'
+                ];
+                
+                let commandIndex = 0;
+                let charIndex = 0;
+                
+                function typeCommand() {
+                    if (charIndex < commands[commandIndex].length) {
+                        typingCommand.textContent = commands[commandIndex].substring(0, charIndex + 1) + '_';
+                        charIndex++;
+                        setTimeout(typeCommand, 150);
+                    } else {
+                        setTimeout(() => {
+                            charIndex = 0;
+                            commandIndex = (commandIndex + 1) % commands.length;
+                            typeCommand();
+                        }, 2000);
+                    }
+                }
+                
+                setTimeout(typeCommand, 2000);
+            }
+        });
+    </script>
+</body>
+</html> 
